@@ -1,10 +1,8 @@
 INT_MIN=1
 INT_MAX=1000
 
-import time
-
-def prime_numbers(treshold=1):
-	prime_numbers = []
+def prime_numbers(threshold=1):
+	prime_nums = []
 	limit = 0
 	for i in range(INT_MIN,INT_MAX):
 		divider = 2
@@ -17,9 +15,9 @@ def prime_numbers(treshold=1):
 			if tmp == i:
 				break
 			divider += 1
-		if limit == treshold:
+		if limit == threshold:
 			break
-	return prime_numbers
+	return prime_nums
 
 def main():
 	print( prime_numbers(25) )
